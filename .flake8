@@ -1,0 +1,42 @@
+# .flake8
+
+[flake8]
+
+################### FILE PATTERNS ##########################
+
+# Provide a comma-separated list of glob patterns to exclude from checks.
+exclude =
+    # git folder
+    .git,
+    # python cache
+    __pycache__,
+# Provide a comma-separate list of glob patterns to include for checks.
+filename =
+    *.py
+
+
+################### LINTING ################################
+
+########## OPTIONS ##########
+
+# Set the maximum length that any line (with some exceptions) may be.
+max-line-length = 120
+
+# Toggle whether pycodestyle should enforce matching the indentation of the opening bracket’s line.
+# influences E131 and E133
+hang-closing = False
+
+
+########## RULES ##########
+
+# W503 - line break before binary operator
+
+# Specify a list of codes to ignore.
+ignore =
+    W503
+# Specify the list of error codes you wish Flake8 to report.
+select =
+    E,
+    W,
+    F,
+    C

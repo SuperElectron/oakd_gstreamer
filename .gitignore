@@ -1,0 +1,22 @@
+# IDE
+**/.idea
+**/.vscode
+
+# Python
+env
+venv
+dist
+**/__pycache__/
+**/.pyc
+**/.egg*
+
+# Log/Debug/Video files
+**/*.log
+**/*.dot
+**/*.ts
+**/*.m3u8
+
+gstreamer/logs
+gstreamer/sample_1080p_h264.mp4
+gstreamer/bunny.mp4
+gstreamer/bla.mp4

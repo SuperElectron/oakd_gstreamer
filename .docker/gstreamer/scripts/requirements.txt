@@ -1,0 +1,11 @@
+# BASICS
+netifaces
+ffmpeg-python
+flake8
+cython
+pytz
+# OAKD API
+# depth-ai
+# AZURE API
+azure-storage-blob
+azure-identity
