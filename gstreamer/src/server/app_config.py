@@ -14,9 +14,10 @@ ip_cameras = {
     "camera2": "192.168.122.21",
     "camera3": "192.168.122.22",
 }
+SERVER_IP="192.168.1.69"
 
 rtsp_config = {
-    "ip_address": "192.168.1.69",  # 192.168.123.17
+    "ip_address": SERVER_IP,
     "port": "8554",
     "pipeline_conf": [
         {

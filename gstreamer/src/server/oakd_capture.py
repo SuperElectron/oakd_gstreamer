@@ -10,35 +10,6 @@ from gstreamer.src.server.rtsp_server import GstServer
 logger = logging.getLogger(__name__)
 logging.getLogger(__name__).setLevel(logging.WARNING)
 
-# 192.168.123.17
-rtsp_config = {
-    "ip_address": "192.168.1.69",
-    "port": "8554",
-    "pipeline_conf": [
-        {
-            "name": "camera1",
-            "fps": 30,
-            "width": 1920,
-            "height": 1080,
-            "source": {
-                "type": "oakd"
-            },
-            "extension": "/camera1"
-        },
-        {
-            "name": "camera2",
-            "fps": 30,
-            "width": 1920,
-            "height": 1080,
-            "source": {
-                "type": "file",
-                "location": "/gstreamer/sample_1080p_h264.mp4"
-            },
-            "extension": "/camera2"
-        }
-    ]
-}
-
 
 class CameraPipeline(object):
     def __init__(self, conf):

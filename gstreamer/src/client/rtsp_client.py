@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import os
 import sys
 from datetime import datetime
 import gi
@@ -204,10 +203,7 @@ if __name__ == '__main__':
     """
     from gstreamer.common_utils.setup_logging import setup_logging
     setup_logging()
-
-    conf = {
-        "url": "rtsp://192.168.1.69:8554/camera1"
-    }
+    from gstreamer.src.conf import rtsp_client_config as conf
     application = RtspClient(conf=conf)
     try:
         application.run()

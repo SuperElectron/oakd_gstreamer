@@ -1,9 +1,4 @@
 
-"""
-CONFIGS:
-- view the README-appConfig.md in this directory
-"""
-
 CAM_WIDTH = 1920
 CAM_HEIGHT = 1080
 PIPELINE_FPS = "30"
@@ -13,8 +8,10 @@ oakd_cameras = {
     "camera1": "19443010F1A1EE1200"
 }
 
+SERVER="192.168.1.69"
+
 rtsp_server_config = {
-    "ip_address": "192.168.1.69",
+    "ip_address": SERVER,
     "port": "8554",
     "pipeline_conf": [
         {
@@ -31,7 +28,7 @@ rtsp_server_config = {
 }
 
 rtsp_client_config = {
-    "url": "rtsp://192.168.1.69:8554/camera1"
+    "url": f"rtsp://{SERVER}:8554/camera1"
 }
 
 AppConfig = {
